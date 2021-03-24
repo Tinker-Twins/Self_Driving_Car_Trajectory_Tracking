@@ -16,3 +16,12 @@ Following is the list of implemented controllers:
 - Longitudinal Controllers:
   - PID Controller
   - Adaptive Longitudinal Controller (ALC)
+
+## File Description
+
+- `Waypoints.txt` hosts the reference trajectory of the entire mission.
+- `Controller.py` is used to implement the lateral and longitudinal controllers for tracking the trajectory.
+- `Drive.py` hosts the simulation parameters, connects with the simulator and runs the entire motion control pipeline for autonomous trajectory tracking.
+- `Live_Plotter.py` generates and updates plots of the vehicle states and trajectory in real-time.
+- `Controller Performance Analysis.ipynb` is used to analyze the controller performance in terms of tracking metrics and latency.
+- `Results` directory hosts the results of a complete trajectory tracking mission in form of plots and log files.
