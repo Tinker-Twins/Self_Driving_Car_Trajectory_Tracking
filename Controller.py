@@ -200,7 +200,7 @@ class Controller(object):
             else:
                 steering = 0
             self._latency = (time.time()-time_stamp)*1000
-            print('Latency: ' + str(self._latency) + ' ms')
+            #print('Latency: ' + str(self._latency) + ' ms')
             return steering
         elif  self._lateral_controller == 'PID':
             time_stamp=time.time()
@@ -218,7 +218,7 @@ class Controller(object):
             self.vars.accumulated_crosstrack_error = accumulated_crosstrack_error
             self.vars.previous_crosstrack_error = current_crosstrack_error
             self._latency = (time.time()-time_stamp)*1000
-            print('Latency: ' + str(self._latency) + ' ms')
+            #print('Latency: ' + str(self._latency) + ' ms')
             return steering
         elif self._lateral_controller == 'PurePursuit':
             time_stamp=time.time()
@@ -237,7 +237,7 @@ class Controller(object):
             if not math.isnan(steering):
                 self.vars.steering_previous = steering
             self._latency = (time.time()-time_stamp)*1000
-            print('Latency: ' + str(self._latency) + ' ms')
+            #print('Latency: ' + str(self._latency) + ' ms')
             return steering
         elif self._lateral_controller == 'Stanley':
             time_stamp=time.time()
@@ -251,7 +251,7 @@ class Controller(object):
                 cte_term -= np.pi
             steering =  (heading_error + cte_term) # Stanley control law
             self._latency = (time.time()-time_stamp)*1000
-            print('Latency: ' + str(self._latency) + ' ms')
+            #print('Latency: ' + str(self._latency) + ' ms')
             return steering
         elif self._lateral_controller == 'POP':
             time_stamp=time.time()
@@ -269,7 +269,7 @@ class Controller(object):
                     min_dist = dist_to_lookahead_point # Update the minimum distance value
             self.vars.steering_previous = steering # Update previous steering angle value
             self._latency = (time.time()-time_stamp)*1000
-            print('Latency: ' + str(self._latency) + ' ms')
+            #print('Latency: ' + str(self._latency) + ' ms')
             return steering
         else:
             return 0
