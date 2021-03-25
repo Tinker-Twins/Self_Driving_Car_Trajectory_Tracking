@@ -1,13 +1,5 @@
 # Motion Control of Self-Driving Car for Trajectory Tracking
 
-|                  | **ALC**                                                                                                              | **PID**                                                                                                              |
-|------------------|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| **Bang Bang**    | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20Bang-Bang.gif)    | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20Bang-Bang.gif)    |
-| **PID**          | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20PID.gif)          | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20PID.gif)          |
-| **Pure Pursuit** | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20Pure-Pursuit.gif) | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20Pure-Pursuit.gif) |
-| **Stanley**      | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20Stanley.gif)      | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20Stanley.gif)      |
-| **POP**          | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20POP.gif)          | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20POP.gif)          |
-
 ## Project Overview
 
 <p align="justify">
@@ -24,6 +16,14 @@ Following is the list of implemented controllers:
 - Longitudinal Controllers:
   - PID Controller
   - Adaptive Longitudinal Controller (ALC)
+
+|                  | **ALC**                                                                                                              | **PID**                                                                                                              |
+|------------------|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **Bang Bang**    | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20Bang-Bang.gif)    | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20Bang-Bang.gif)    |
+| **PID**          | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20PID.gif)          | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20PID.gif)          |
+| **Pure Pursuit** | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20Pure-Pursuit.gif) | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20Pure-Pursuit.gif) |
+| **Stanley**      | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20Stanley.gif)      | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20Stanley.gif)      |
+| **POP**          | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/ALC%20-%20POP.gif)          | ![](https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Media/PID%20-%20POP.gif)          |
 
 ## File Description
 
