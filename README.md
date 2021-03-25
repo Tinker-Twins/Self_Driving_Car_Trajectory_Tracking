@@ -25,3 +25,18 @@ Following is the list of implemented controllers:
 - `Live_Plotter.py` generates and updates plots of the vehicle states and trajectory in real-time.
 - `Controller Performance Analysis.ipynb` is used to analyze the controller performance in terms of tracking metrics and latency.
 - `Results` directory hosts the results of a complete trajectory tracking mission in form of plots and log files.
+
+## Citation
+
+We encourage you to cite the [following paper](https://arxiv.org/abs/2103.13240) when using the POP control algorithm for your research:
+
+```bibtex
+@eprint{Samak2021POP,
+      title={Proximally Optimal Predictive Control Algorithm for Path Tracking of Self-Driving Cars}, 
+      author={Chinmay Vilas Samak and Tanmay Vilas Samak and Sivanathan Kandhasamy},
+      year={2021},
+      eprint={2103.13240},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+```
