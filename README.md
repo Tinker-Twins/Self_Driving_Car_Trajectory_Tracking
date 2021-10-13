@@ -39,7 +39,7 @@ Following is the list of implemented controllers:
 We encourage you to cite the [following paper](https://arxiv.org/abs/2103.13240) when using the POP control algorithm for your research:
 
 ```bibtex
-@eprint{Samak2021POP-Controller,
+@eprint{POP-Controller-2021,
       title={Proximally Optimal Predictive Control Algorithm for Path Tracking of Self-Driving Cars}, 
       author={Chinmay Vilas Samak and Tanmay Vilas Samak and Sivanathan Kandhasamy},
       year={2021},
