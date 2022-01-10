@@ -49,4 +49,4 @@ We encourage you to cite the [following paper](https://arxiv.org/abs/2103.13240)
 }
 ```
 
-This work has been published in AIR 2021: Advances in Robotics - 5th International Conference of The Robotics Society. The publication can be found on [ACM Digital Library](https://dl.acm.org/doi/10.1145/3478586.3478632).
+This work has been published in **AIR2021: Advances in Robotics - 5th International Conference of The Robotics Society.** The publication can be found on [ACM Digital Library](https://dl.acm.org/doi/10.1145/3478586.3478632).
