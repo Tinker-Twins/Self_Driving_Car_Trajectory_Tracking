@@ -34,6 +34,52 @@ Following is the list of implemented controllers:
 - `Controller Performance Analysis.ipynb` is used to analyze the controller performance in terms of tracking metrics and latency.
 - `Results` directory hosts the results of a complete trajectory tracking mission in form of plots and log files.
 
+## Usage
+
+**1. Install [CARLA Simulator](https://carla.org/) [Tested with CARLA v0.8.4]**
+
+**2. Navigate to CARLA directory, for exampe:**
+
+*Windows:*
+
+```bash
+> cd C:/CARLA
+```
+
+*Ubuntu:*
+
+```
+$ cd $HOME/CARLA
+```
+
+**3. Launch the CARLA Simulator application, for example:**
+
+*Windows:*
+
+```bash
+> CarlaUE4.exe /Game/Maps/RaceTrack -carla-server -benchmark -fps=20 -carla-no-hud
+```
+
+*Ubuntu:*
+
+```bash
+$ ./CarlaUE4.sh /Game/Maps/RaceTrack -carla-server -benchmark -fps=20 -carla-no-hud
+```
+
+**4. Run the Python client script while choosing the appropriate longitudinal and lateral control algorithms:**
+
+*Windows:*
+
+```bash
+> python Drive.py --Longitudinal-Controller: {PID, ALC} --Lateral-Controller: {BangBang, PID, PurePursuit, Stanley, POP}
+```
+
+*Ubuntu:*
+
+```bash
+$ python Drive.py --Longitudinal-Controller: {PID, ALC} --Lateral-Controller: {BangBang, PID, PurePursuit, Stanley, POP}
+```
+
 ## Citation
 
 - We encourage you to cite the [following chapter](https://arxiv.org/abs/2011.08729) when using this repository for your research:
