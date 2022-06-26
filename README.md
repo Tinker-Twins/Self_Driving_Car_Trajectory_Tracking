@@ -1,5 +1,8 @@
 # Motion Control of Self-Driving Car for Trajectory Tracking
 
+![Github Stars](https://badgen.net/github/stars/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking?icon=github&label=stars)
+![Github Forks](https://badgen.net/github/forks/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking?icon=github&label=forks)
+
 ## Project Overview
 
 <p align="justify">
