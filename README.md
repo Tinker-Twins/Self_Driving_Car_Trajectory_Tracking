@@ -119,7 +119,7 @@ $ python Drive.py --Longitudinal-Controller: {PID, ALC} --Lateral-Controller: {B
   keywords = {Self-driving cars, motion control, path tracking},
   location = {Kanpur, India},
   series = {AIR '21}
-}
+  }
   ```
 
   This work has been published in **AIR2021: Advances in Robotics - 5th International Conference of The Robotics Society.** The publication can be found on [ACM Digital Library](https://dl.acm.org/doi/10.1145/3478586.3478632).
