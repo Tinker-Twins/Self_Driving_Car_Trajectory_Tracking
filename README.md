@@ -104,14 +104,22 @@ $ python Drive.py --Longitudinal-Controller: {PID, ALC} --Lateral-Controller: {B
 - We specifically encourage you to cite the [following paper](https://arxiv.org/abs/2103.13240) when using the POP control algorithm for your research:
 
   ```bibtex
-  @eprint{POP-Controller-2021,
-        title={Proximally Optimal Predictive Control Algorithm for Path Tracking of Self-Driving Cars}, 
-        author={Chinmay Vilas Samak and Tanmay Vilas Samak and Sivanathan Kandhasamy},
-        year={2021},
-        eprint={2103.13240},
-        archivePrefix={arXiv},
-        primaryClass={cs.RO}
-  }
+  @inproceedings{POP-Controller-2021,
+  author = {Samak, Chinmay Vilas and Samak, Tanmay Vilas and Kandhasamy, Sivanathan},
+  title = {Proximally Optimal Predictive Control Algorithm for Path Tracking of Self-Driving Cars},
+  year = {2022},
+  isbn = {9781450389716},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3478586.3478632},
+  doi = {10.1145/3478586.3478632},
+  booktitle = {Proceedings of the 2021 5th International Conference on Advances in Robotics},
+  articleno = {11},
+  numpages = {5},
+  keywords = {Self-driving cars, motion control, path tracking},
+  location = {Kanpur, India},
+  series = {AIR '21}
+}
   ```
 
   This work has been published in **AIR2021: Advances in Robotics - 5th International Conference of The Robotics Society.** The publication can be found on [ACM Digital Library](https://dl.acm.org/doi/10.1145/3478586.3478632).
