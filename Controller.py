@@ -34,12 +34,12 @@ class Controller(object):
         self._kD_a               = 0.27
         self._err_hist_a         = queue.Queue(500) # Limited error buffer
         # ALC
-        self._k_t                = 0.5 # Agressiveness coefficient
+        self._k_t                = 0.5 # Aggressiveness coefficient
         self._vel_limit          = 69.4444 # Speed limit (250 kmph)
         self._steer_limit        = 1.22 # Steering limit (70 deg)
         ## LATERAL CONTROLLER PARAMETERS
         self._lateral_controller = lateral_controller
-        self._cte_ref_dist       = 1.5 # Distance from vehicle centre to front axle (m) (2 for Bang-Bang, 1.5 for PID and Stanley)
+        self._cte_ref_dist       = 1.5 # Distance from vehicle center to CTE calculation reference (e.g.front axle) (m) (2 for Bang-Bang, 1.5 for PID and Stanley)
         self._eps_lookahead      = 10e-3 # Epsilon distance approximation threshold (m)
         self._closest_distance   = 0 # Distance to closest waypoint (m)
         # PID
@@ -100,7 +100,7 @@ class Controller(object):
         self._set_throttle = throttle
 
     def set_steer(self, input_steer_in_rad):
-        # Covnert radians to [-1, 1]
+        # Convert radians to [-1, 1]
         input_steer = self._conv_rad_to_steer * input_steer_in_rad
         # Clamp the steering command to valid bounds
         steer           = np.fmax(np.fmin(input_steer, 1.0), -1.0)
@@ -134,8 +134,8 @@ class Controller(object):
         return np.arccos(inner_prod/lookahead_dis)
 
     def get_steering_direction(self, v1, v2):
-        corss_prod = v1[0]*v2[1] - v1[1]*v2[0]
-        if corss_prod >= 0:
+        cross_prod = v1[0]*v2[1] - v1[1]*v2[0]
+        if cross_prod >= 0:
             return -1
         return 1
 
@@ -202,7 +202,7 @@ class Controller(object):
             self._latency = (time.time()-time_stamp)*1000
             #print('Latency: ' + str(self._latency) + ' ms')
             return steering
-        elif  self._lateral_controller == 'PID':
+        elif self._lateral_controller == 'PID':
             time_stamp=time.time()
             time_step = t - self.vars.t_previous
             current_crosstrack_error = self.get_crosstrack_error(x, y, waypoints)
@@ -255,7 +255,7 @@ class Controller(object):
             return steering
         elif self._lateral_controller == 'POP':
             time_stamp=time.time()
-            steering_list = self.vars.steering_previous + self._steering_list * self._pi/180 # List of steering angles in the neighbourhood (left and right) of previous steering angle
+            steering_list = self.vars.steering_previous + self._steering_list * self._pi/180 # List of steering angles in the neighborhood (left and right) of previous steering angle
             lookahead_dist = self._min_lookahead_dist + self._Kv*v
             lp_idx = self.get_lookahead_point_index(x, y, waypoints, lookahead_dist)
             lookahead_point = [waypoints[lp_idx][0], waypoints[lp_idx][1]] # Select a lookahead point from the dynamically updated list of proximal waypoints
